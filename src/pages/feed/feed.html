@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Feed um back</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="http://www.estrelando.com.br/uploads/2017/07/05/christopher-1499282448.jpg">
+      </ion-avatar>
+      <h2 class="usuario-nome">Emmett Brown</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+
+    <img src="http://gamehall.uol.com.br/v10/wp-content/uploads/2015/10/de-volta-para-o-futuro-poster.jpg">
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+        DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small (click)="liked()">
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>{{likesU}} Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+</ion-content>
